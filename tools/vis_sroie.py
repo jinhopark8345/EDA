@@ -10,17 +10,16 @@ def run_visualize(args):
     dst_path = args.dst
     dataset_name = args.dataset_name
 
-    # make dst folder
-    os.makedirs(dst_path, exist_ok=True)
-
     # vis all samples in SROIE dataset
     dataset = load_dataset(dataset_name)
     for split in dataset.keys():
+        vis_save_path = os.path.join(dst_path, split)
+        os.makedirs(vis_save_path, exist_ok=True)
         samples = dataset[split]
 
         # vis samples one by one
         for sample in tqdm(samples, desc=f"processing {split} dataset ..."):
-            vis_sample(sample, dst_path)
+            vis_sample(sample, vis_save_path)
 
 
 if __name__ == "__main__":
