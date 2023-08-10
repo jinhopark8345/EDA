@@ -162,3 +162,4 @@ cython_debug/
 
 dataset/*
 funsd_vis_output/*
+sroie_bio_vis_output/*

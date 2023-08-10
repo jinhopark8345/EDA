@@ -46,8 +46,9 @@ It is a dataset for Text Detection, Optical Character Recognition, Spatial Layou
 Above image is a visualized sample of FUNSD dataset. 
 
 From above image,
+
  - Red boxes : The words(texts) in each of red boxes are the words of one entity
- - Curved red arrows : links between entities
+ - Red arrows : links between entities
  - Red numbers : entity indices in FUNSD dataset (orders of them)
  - Green boxes : Each word has its own box
  - Green numbers : orders of words in each entity

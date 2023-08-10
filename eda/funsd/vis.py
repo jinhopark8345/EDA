@@ -10,7 +10,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 
-def draw_words(
+def draw_entities(
     ax, boxes: List[List[int]], labels: List[str], links: List[List[List[int]]]
 ):
     # draw word boxes and their indices
@@ -109,11 +109,10 @@ def vis_sample(sample: Dict[str, Any], dst_path: str):
     fig = plt.figure(figsize=(width / 100, height / 100), dpi=200)
     ax = fig.add_axes([0, 0, 1, 1])
 
-    ax.set_title("original_funsd")
     ax.imshow(img)
 
     # 1. draw "word" information (boxes, indices, labels)
-    draw_words(ax, boxes, labels, links)
+    draw_entities(ax, boxes, labels, links)
 
     # 2. draw text_box boxes on axes
     draw_text_box_list(ax, text_box_list)
@@ -122,6 +121,6 @@ def vis_sample(sample: Dict[str, Any], dst_path: str):
     fig.savefig(os.path.join(dst_path, filename), dpi=200)
 
     # clear plt to prevent memory leak
-    plt.cla()   # clear the current axes
-    plt.clf()   # clear the current figure
-    plt.close() # closes the current figure
+    plt.cla()  # clear the current axes
+    plt.clf()  # clear the current figure
+    plt.close()  # closes the current figure
