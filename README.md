@@ -1,3 +1,6 @@
+# About this repository
+This is where I keep visualization/EDA result of public datasets. 
+Feel free to use it for your own project.
 
 # Project Setup
 ```bash
