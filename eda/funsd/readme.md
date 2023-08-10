@@ -1,5 +1,5 @@
 
-# What is a [FUNSD Dataset](https://guillaumejaume.github.io/FUNSD/)?
+# About [FUNSD Dataset](https://guillaumejaume.github.io/FUNSD/)
 FUNSD stands for **Form Understanding in Noisy Scanned Documents**.
 
 It is a dataset for Text Detection, Optical Character Recognition, Spatial Layout Analysis and Form Understanding.
