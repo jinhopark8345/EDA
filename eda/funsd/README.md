@@ -45,6 +45,7 @@ It is a dataset for Text Detection, Optical Character Recognition, Spatial Layou
 ![sample2](../../assets/funsd_vis_sample/716552.jpeg)
 Above image is a visualized sample of FUNSD dataset. 
 
+
 From above image,
 
  - Red boxes : The words(texts) in each of red boxes are the words of one entity
@@ -55,3 +56,6 @@ From above image,
 
 Entities are like "NEW ITEM", "DESCRIPTION", "VICEROY Rich Lights" in the image below. (They are in red boxes)
 Entities are consist of single/multiple words like "DESCRIPTION", "NEW ITEM" and "VICEROY Rich Lights"
+
+You can find other visualized samples [here](https://drive.google.com/file/d/1M3z-KKxx4JdGBb7TQIHyRyiL2KtGDAZ2/view?usp=drive_link) 
+
