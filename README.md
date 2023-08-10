@@ -2,7 +2,8 @@
 This is where I keep visualization/EDA result of public datasets. 
 Feel free to use it for your own project.
 
-# Project Setup
+# Project Setup 
+(only if you want to visualize yourself)
 ```bash
 git clone git@github.com:jinhopark8345/FUNSD-EDA.git
 pip install -e .
