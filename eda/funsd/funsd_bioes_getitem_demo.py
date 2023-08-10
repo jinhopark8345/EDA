@@ -73,8 +73,8 @@ class FUNSDBIOESDataset(Dataset):
         for idx, (bbox, text) in enumerate(zip(bboxes, texts)):
             input_ids = self.tokenizer.encode(text, add_special_tokens=False)
 
-            word_input_ids.extend(input_ids)
-            word_bboxes.extend([bbox for _ in range(len(input_ids))])
+            word_input_ids.append(input_ids)
+            word_bboxes.append([bbox for _ in range(len(input_ids))])
 
             # bioes tagging for known classes (except Other class)
             if label != self.out_class_name:
@@ -99,7 +99,7 @@ class FUNSDBIOESDataset(Dataset):
                         )
             else:
                 token_labels = [label] + [self.pad_token] * (len(input_ids) - 1)
-            word_labels.extend(token_labels)
+            word_labels.append(token_labels)
 
         assert len(word_input_ids) > 0
         assert len(word_input_ids) == len(word_bboxes) == len(word_labels)
@@ -138,10 +138,9 @@ class FUNSDBIOESDataset(Dataset):
             if word_input_ids == []:
                 continue
 
-            input_ids_list.append(word_input_ids)
-            labels_list.append(word_labels)
-            bboxes_list.append(word_bboxes)
-        breakpoint()
+            input_ids_list.extend(word_input_ids)
+            labels_list.extend(word_labels)
+            bboxes_list.extend(word_bboxes)
 
         tokens_length_list: List[int] = [len(l) for l in input_ids_list]
 
@@ -245,10 +244,3 @@ if __name__ == "__main__":
     )
 
     sample1 = train_dataset[0]
-    breakpoint()
-    # for s in train_dataset:
-    #     tmp = s
-
-    # for sample in d:
-    #     tmp.handle_sample(sample)
-    #     break
