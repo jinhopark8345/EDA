@@ -6,8 +6,12 @@ pip install -e .
 pip install -r requirements.txt
 ```
 
-# FUNSD 
-[FUNSD Visualization](./eda/funsd/README.md) 
+# Datasets
+### FUNSD 
+[FUNSD Visualization and explanation](./eda/funsd/README.md) 
+
+### SROIE 
+[SROIE Visualization and explanation](./eda/sroie/README.md) 
 
 
 # Visualization examples
