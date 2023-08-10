@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-   name='funsd-eda',
+   name='eda',
    version='1.0',
-   description='funsd EDA',
+   description='Visualization and EDA',
    author='Jinho Park',
    author_email='jinhoparkseoul@gmail.com',
    packages=['eda'],  #same as name
