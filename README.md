@@ -16,7 +16,11 @@ python3 tools/prepare_funsd_dataset.py
 python3 tools/vis_funsd.py
 ```
 
-# FUNSD vis example
+# Visualization examples
+
+### FUNSD sample
+[FUNSD Dataset](https://guillaumejaume.github.io/FUNSD/) 
 ![sample2](assets/funsd_vis_sample/716552.jpeg)
 
+### SROIE sample
 
