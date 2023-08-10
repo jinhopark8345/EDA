@@ -4,7 +4,7 @@ FUNSD stands for **Form Understanding in Noisy Scanned Documents**.
 
 It is a dataset for Text Detection, Optical Character Recognition, Spatial Layout Analysis and Form Understanding.
 
-![sample2](assets/funsd_vis_sample/716552.jpeg)
+![sample2](../../assets/funsd_vis_sample/716552.jpeg)
 
 From above image,
  - Red boxes : The words(texts) in each of red boxes are the words of one entity
