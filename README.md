@@ -17,6 +17,6 @@ python3 tools/vis_funsd.py
 ```
 
 # FUNSD vis example
-![sample2](assets/funsd_vis_sample/716552.png)
+![sample2](assets/funsd_vis_sample/716552.jpeg)
 
 
