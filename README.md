@@ -5,7 +5,7 @@ Feel free to use it for your own project.
 # Project Setup 
 (only if you want to visualize yourself)
 ```bash
-git clone git@github.com:jinhopark8345/FUNSD-EDA.git
+git clone git@github.com:jinhopark8345/EDA.git
 pip install -e .
 pip install -r requirements.txt
 ```

@@ -11,7 +11,7 @@ SROIE stands for **Scanned Receipt OCR and Information Extraction**.
 From above image,
 
  - Red boxes : The words(texts) in each of red boxes are the words of one entity
- - Red numbers : entity indices in FUNSD dataset (orders of them)
+ - Red numbers : entity indices in SROIE dataset (orders of them)
  - Blue letters : labels of each words
  
 Since each word shared entity's box, some labels are overlapped. (like "B_company" and "I_company")
